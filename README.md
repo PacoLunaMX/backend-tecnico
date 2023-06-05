@@ -16,12 +16,12 @@ CLUSTER_PASSWORD=<cluster_password>
 Instala las dependencias:
 
 ```
-python -m pip install -r requirements.txt
+python pip install -r requirements.txt
 ```
 
 Inicia el servidor:
 ```
-python -m uvicorn app.main:app --reload
+python uvicorn app.main:app --reload
 ```
 
 Cuando la aplicación inicie, navega a `http://localhost:8000/docs` y prueba los endpoints para  `usuarios`.
@@ -29,5 +29,5 @@ Cuando la aplicación inicie, navega a `http://localhost:8000/docs` y prueba los
 ## Correr los tests
 
 ```
-python -m pytest
+python pytest
 ```
